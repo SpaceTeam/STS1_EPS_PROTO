@@ -1,0 +1,112 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "EPS Overview"
+Date "2021-05-31"
+Rev "1.0.0"
+Comp "TU Wien Space Team"
+Comment1 "Designed by David Freismuth on Earth"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 60D46E13
+P 7700 1750
+F 0 "#PWR?" H 7700 1500 50  0001 C CNN
+F 1 "GND" H 7705 1577 50  0000 C CNN
+F 2 "" H 7700 1750 50  0001 C CNN
+F 3 "" H 7700 1750 50  0001 C CNN
+	1    7700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D46A71
+P 7350 1750
+F 0 "#PWR?" H 7350 1500 50  0001 C CNN
+F 1 "GND" H 7355 1577 50  0000 C CNN
+F 2 "" H 7350 1750 50  0001 C CNN
+F 3 "" H 7350 1750 50  0001 C CNN
+	1    7350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D462E6
+P 7000 1750
+F 0 "#PWR?" H 7000 1500 50  0001 C CNN
+F 1 "GND" H 7005 1577 50  0000 C CNN
+F 2 "" H 7000 1750 50  0001 C CNN
+F 3 "" H 7000 1750 50  0001 C CNN
+	1    7000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1450 7750 1450
+$Comp
+L Device:CP C?
+U 1 1 60D4556F
+P 7700 1600
+F 0 "C?" H 7818 1646 50  0000 L CNN
+F 1 "CP" H 7818 1555 50  0000 L CNN
+F 2 "" H 7738 1450 50  0001 C CNN
+F 3 "~" H 7700 1600 50  0001 C CNN
+	1    7700 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 1450
+Wire Wire Line
+	7350 1450 7700 1450
+$Comp
+L Device:C C?
+U 1 1 60D44B49
+P 7350 1600
+F 0 "C?" H 7465 1646 50  0000 L CNN
+F 1 "C" H 7465 1555 50  0000 L CNN
+F 2 "" H 7388 1450 50  0001 C CNN
+F 3 "~" H 7350 1600 50  0001 C CNN
+	1    7350 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 1450
+Wire Wire Line
+	7000 1450 7350 1450
+$Comp
+L Device:C C?
+U 1 1 60D43AF5
+P 7000 1600
+F 0 "C?" H 7115 1646 50  0000 L CNN
+F 1 "C" H 7115 1555 50  0000 L CNN
+F 2 "" H 7038 1450 50  0001 C CNN
+F 3 "~" H 7000 1600 50  0001 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1750 4850 1750
+Text Label 4600 1750 0    50   ~ 0
+SHDN
+Wire Wire Line
+	4850 1550 4850 1750
+Wire Wire Line
+	5300 1550 4850 1550
+Connection ~ 7000 1450
+Wire Wire Line
+	6000 1450 7000 1450
+Text Label 7750 1450 0    50   ~ 0
+Vout
+$Sheet
+S 5300 1350 700  400 
+U 60B53241
+F0 "EPS Battery Charger" 50
+F1 "STS1_EPS_BatteryCharger.sch" 50
+F2 "Vin" I L 5300 1450 50 
+F3 "Vout" O R 6000 1450 50 
+F4 "SHDN" I L 5300 1550 50 
+$EndSheet
+$EndSCHEMATC
