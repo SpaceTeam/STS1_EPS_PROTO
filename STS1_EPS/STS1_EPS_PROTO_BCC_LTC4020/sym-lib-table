@@ -6,4 +6,6 @@
   (lib (name 2021-06-25_11-05-00)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/2021-05-15_09-58-27/2021-06-25_11-05-00.lib)(options "")(descr ""))
   (lib (name 2021-06-25_14-01-13)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/2021-05-15_09-58-27/2021-06-25_14-01-13.lib)(options "")(descr ""))
   (lib (name 2021-06-25_19-38-22)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/2021-05-15_09-58-27/2021-06-25_19-38-22.lib)(options "")(descr ""))
+  (lib (name 2021-06-29_19-28-22)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/2021-05-15_09-58-27/2021-06-29_19-28-22.lib)(options "")(descr ""))
+  (lib (name 2021-07-02_17-58-25)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/2021-05-15_09-58-27/2021-07-02_17-58-25.lib)(options "")(descr ""))
 )
