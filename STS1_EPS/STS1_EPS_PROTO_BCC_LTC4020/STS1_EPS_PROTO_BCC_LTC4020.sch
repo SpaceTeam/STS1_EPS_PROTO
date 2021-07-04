@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -13,75 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR011
-U 1 1 60D46E13
-P 7700 1800
-F 0 "#PWR011" H 7700 1550 50  0001 C CNN
-F 1 "GND" H 7705 1627 50  0000 C CNN
-F 2 "" H 7700 1800 50  0001 C CNN
-F 3 "" H 7700 1800 50  0001 C CNN
-	1    7700 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR010
-U 1 1 60D46A71
-P 7300 1800
-F 0 "#PWR010" H 7300 1550 50  0001 C CNN
-F 1 "GND" H 7305 1627 50  0000 C CNN
-F 2 "" H 7300 1800 50  0001 C CNN
-F 3 "" H 7300 1800 50  0001 C CNN
-	1    7300 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 60D462E6
-P 6850 1800
-F 0 "#PWR09" H 6850 1550 50  0001 C CNN
-F 1 "GND" H 6855 1627 50  0000 C CNN
-F 2 "" H 6850 1800 50  0001 C CNN
-F 3 "" H 6850 1800 50  0001 C CNN
-	1    6850 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C3
-U 1 1 60D4556F
-P 7700 1600
-F 0 "C3" H 7818 1646 50  0000 L CNN
-F 1 "56µ" H 7818 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 7738 1450 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/293/e_gyc-1903391.pdf" H 7700 1600 50  0001 C CNN
-	1    7700 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 60D44B49
-P 7300 1600
-F 0 "C2" H 7415 1646 50  0000 L CNN
-F 1 "4µ7" H 7415 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1812_4532Metric" H 7338 1450 50  0001 C CNN
-F 3 "~" H 7300 1600 50  0001 C CNN
-	1    7300 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 60D43AF5
-P 6850 1600
-F 0 "C1" H 6965 1646 50  0000 L CNN
-F 1 "100n" H 6965 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1812_4532Metric" H 6888 1450 50  0001 C CNN
-F 3 "~" H 6850 1600 50  0001 C CNN
-	1    6850 1600
-	1    0    0    -1  
-$EndComp
-Connection ~ 6850 1450
-Wire Wire Line
-	6000 1450 6850 1450
 $Sheet
 S 5300 1350 700  200 
 U 60B53241
@@ -112,9 +43,6 @@ F 3 "" H 10050 1550 50  0001 C CNN
 	1    10050 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 1450 8600 1450
-Connection ~ 7700 1450
 $Comp
 L 2021-06-25_19-38-22:1729267 J1
 U 1 1 60D71A76
@@ -319,8 +247,6 @@ F 3 "" H 1500 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5300 1450 2650 1450
-Wire Wire Line
 	2100 1650 2650 1650
 Connection ~ 2650 1450
 Wire Wire Line
@@ -357,69 +283,177 @@ Wire Wire Line
 Connection ~ 2650 2650
 Wire Wire Line
 	2650 2650 2650 2850
+$Sheet
+S 10350 6050 500  150 
+U 60E09456
+F0 "template" 50
+F1 "template.sch" 50
+$EndSheet
 $Comp
-L Device:CP C9
-U 1 1 60DCCB93
-P 8150 1600
-F 0 "C9" H 8268 1646 50  0000 L CNN
-F 1 "56µ" H 8268 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 8188 1450 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/293/e_gyc-1903391.pdf" H 8150 1600 50  0001 C CNN
-	1    8150 1600
-	1    0    0    -1  
+L Device:Jumper_NC_Small JP15
+U 1 1 60E288CD
+P 3900 1700
+F 0 "JP15" V 3854 1774 50  0000 L CNN
+F 1 "Input Voltage" V 3945 1774 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 1700 50  0001 C CNN
+F 3 "~" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C10
-U 1 1 60DCD030
-P 8600 1600
-F 0 "C10" H 8718 1646 50  0000 L CNN
-F 1 "56µ" H 8718 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 8638 1450 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/293/e_gyc-1903391.pdf" H 8600 1600 50  0001 C CNN
-	1    8600 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6850 1750 6850 1800
-Wire Wire Line
-	7300 1750 7300 1800
-Wire Wire Line
-	7700 1750 7700 1800
-$Comp
-L power:GND #PWR022
-U 1 1 60DCEDB8
-P 8150 1800
-F 0 "#PWR022" H 8150 1550 50  0001 C CNN
-F 1 "GND" H 8155 1627 50  0000 C CNN
-F 2 "" H 8150 1800 50  0001 C CNN
-F 3 "" H 8150 1800 50  0001 C CNN
-	1    8150 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR023
-U 1 1 60DCF044
-P 8600 1800
-F 0 "#PWR023" H 8600 1550 50  0001 C CNN
-F 1 "GND" H 8605 1627 50  0000 C CNN
-F 2 "" H 8600 1800 50  0001 C CNN
-F 3 "" H 8600 1800 50  0001 C CNN
-	1    8600 1800
+L power:GND #PWR0106
+U 1 1 60E29213
+P 3900 1950
+F 0 "#PWR0106" H 3900 1700 50  0001 C CNN
+F 1 "GND" H 3905 1777 50  0000 C CNN
+F 2 "" H 3900 1950 50  0001 C CNN
+F 3 "" H 3900 1950 50  0001 C CNN
+	1    3900 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 1750 8150 1800
+	3900 1600 3900 1450
 Wire Wire Line
-	8600 1750 8600 1800
-Connection ~ 8150 1450
+	3900 1450 2650 1450
 Wire Wire Line
-	7700 1450 8150 1450
-Connection ~ 8600 1450
+	3900 1800 3900 1950
+$Comp
+L 2021-06-29_19-28-22:CST0612-FC-R002E R25
+U 1 1 60E2A7E7
+P 3800 1400
+F 0 "R25" H 4600 1025 50  0000 C CNN
+F 1 "5m" H 4600 1116 50  0000 C CNN
+F 2 "footprints:CST0612-FC-R002E" H 3800 1400 50  0001 C CNN
+F 3 "~" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    1   
+$EndComp
 Wire Wire Line
-	8150 1450 8600 1450
+	4350 1450 3900 1450
+Connection ~ 3900 1450
 Wire Wire Line
-	6850 1450 7300 1450
-Connection ~ 7300 1450
+	4850 1450 5300 1450
+$Comp
+L Device:Jumper_NC_Small JP16
+U 1 1 60E33399
+P 4600 850
+F 0 "JP16" H 4600 1062 50  0000 C CNN
+F 1 "Input Current Shunt" H 4600 971 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4600 850 50  0001 C CNN
+F 3 "~" H 4600 850 50  0001 C CNN
+	1    4600 850 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7300 1450 7700 1450
+	4500 850  4250 850 
+Wire Wire Line
+	4250 850  4250 1250
+Wire Wire Line
+	4250 1250 4350 1250
+Wire Wire Line
+	4700 850  4950 850 
+Wire Wire Line
+	4950 850  4950 1250
+Wire Wire Line
+	4950 1250 4850 1250
+$Comp
+L 2021-06-29_19-28-22:CST0612-FC-R002E R20
+U 1 1 6108DE0B
+P 6300 1500
+AR Path="/6108DE0B" Ref="R20"  Part="1" 
+AR Path="/60B53241/6108DE0B" Ref="R?"  Part="1" 
+F 0 "R20" H 7050 1350 50  0000 L CNN
+F 1 "5m" H 7050 1550 50  0000 L CNN
+F 2 "footprints:CST0612-FC-R002E" V 6230 1500 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/54/cst0612-777607.pdf" H 6300 1500 50  0001 C CNN
+	1    6300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 6108DE12
+P 7100 1800
+AR Path="/60B53241/6108DE12" Ref="JP?"  Part="1" 
+AR Path="/6108DE12" Ref="JP17"  Part="1" 
+F 0 "JP17" H 7350 1900 50  0000 R CNN
+F 1 "Output Current Shunt" H 7100 1900 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7100 1800 50  0001 C CNN
+F 3 "~" H 7100 1800 50  0001 C CNN
+	1    7100 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 1800 7350 1800
+Wire Wire Line
+	7350 1800 7350 1650
+Wire Wire Line
+	7000 1800 6850 1800
+Wire Wire Line
+	6850 1800 6850 1650
+$Comp
+L Device:C C?
+U 1 1 611C3E0F
+P 9600 1600
+AR Path="/60B53241/611C3E0F" Ref="C?"  Part="1" 
+AR Path="/611C3E0F" Ref="C2"  Part="1" 
+F 0 "C2" H 9450 1500 50  0000 C CNN
+F 1 "100n" H 9450 1700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9638 1450 50  0001 C CNN
+F 3 "~" H 9600 1600 50  0001 C CNN
+	1    9600 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 611C3E15
+P 9600 1850
+AR Path="/60B53241/611C3E15" Ref="#PWR?"  Part="1" 
+AR Path="/611C3E15" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 9600 1600 50  0001 C CNN
+F 1 "GND" H 9605 1677 50  0000 C CNN
+F 2 "" H 9600 1850 50  0001 C CNN
+F 3 "" H 9600 1850 50  0001 C CNN
+	1    9600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1750 9600 1850
+$Comp
+L Device:CP C?
+U 1 1 611C3E1C
+P 9100 1600
+AR Path="/60B53241/611C3E1C" Ref="C?"  Part="1" 
+AR Path="/611C3E1C" Ref="C1"  Part="1" 
+F 0 "C1" H 9218 1646 50  0000 L CNN
+F 1 "680µ" H 9218 1555 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7361-438_AVX-U" H 9138 1450 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/40/catalogue_TRM-1021477.pdf" H 9100 1600 50  0001 C CNN
+	1    9100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 611C3E22
+P 9100 1850
+AR Path="/60B53241/611C3E22" Ref="#PWR?"  Part="1" 
+AR Path="/611C3E22" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 9100 1600 50  0001 C CNN
+F 1 "GND" H 9105 1677 50  0000 C CNN
+F 2 "" H 9100 1850 50  0001 C CNN
+F 3 "" H 9100 1850 50  0001 C CNN
+	1    9100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1750 9100 1850
+Wire Wire Line
+	6000 1450 6850 1450
+Wire Wire Line
+	7350 1450 9100 1450
+Connection ~ 9100 1450
+Wire Wire Line
+	9100 1450 9600 1450
+Connection ~ 9600 1450
+Wire Wire Line
+	9600 1450 10050 1450
 $EndSCHEMATC

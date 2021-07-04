@@ -1,0 +1,182 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1000 800  0    50   Input ~ 0
+ITH
+Text HLabel 2250 800  0    50   Input ~ 0
+VC
+$Comp
+L power:GND #PWR?
+U 1 1 611FF5B2
+P 1250 2750
+AR Path="/60B53241/611FF5B2" Ref="#PWR?"  Part="1" 
+AR Path="/60B53241/611DFB46/611FF5B2" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 1250 2500 50  0001 C CNN
+F 1 "GND" H 1255 2577 50  0000 C CNN
+F 2 "" H 1250 2750 50  0001 C CNN
+F 3 "" H 1250 2750 50  0001 C CNN
+	1    1250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2650 1250 2750
+$Comp
+L 2021-06-25_14-01-13:TS53YL_20K_20% R?
+U 1 1 611FF5BC
+P 1250 1300
+AR Path="/611FF5BC" Ref="R?"  Part="1" 
+AR Path="/60B53241/611FF5BC" Ref="R?"  Part="1" 
+AR Path="/60B53241/611DFB46/611FF5BC" Ref="R23"  Part="1" 
+F 0 "R23" V 1597 1221 60  0000 R CNN
+F 1 "50k" V 1703 1221 60  0000 R CNN
+F 2 "footprints:TS53YL 20K 20&percent_" H 1675 865 60  0001 C CNN
+F 3 "" H 1250 1300 60  0000 C CNN
+	1    1250 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 1700 1600 1700
+Wire Wire Line
+	1600 1700 1600 1300
+Wire Wire Line
+	1600 1300 1250 1300
+Connection ~ 1250 1300
+$Comp
+L Jumper:Jumper_3_Open JP?
+U 1 1 6120369D
+P 1000 1200
+AR Path="/60B53241/6120369D" Ref="JP?"  Part="1" 
+AR Path="/60B53241/611DFB46/6120369D" Ref="JP21"  Part="1" 
+F 0 "JP21" H 1050 1000 50  0000 L CNN
+F 1 "Jumper_3_Open" H 300 1100 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1000 1200 50  0001 C CNN
+F 3 "~" H 1000 1200 50  0001 C CNN
+	1    1000 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1250 1200 1250 1300
+$Comp
+L power:GND #PWR?
+U 1 1 6120470F
+P 750 2750
+AR Path="/60B53241/6120470F" Ref="#PWR?"  Part="1" 
+AR Path="/60B53241/611DFB46/6120470F" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 750 2500 50  0001 C CNN
+F 1 "GND" H 755 2577 50  0000 C CNN
+F 2 "" H 750 2750 50  0001 C CNN
+F 3 "" H 750 2750 50  0001 C CNN
+	1    750  2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  1200 750  2750
+Wire Wire Line
+	1250 2100 1250 2350
+Wire Wire Line
+	1000 800  1000 1050
+$Comp
+L Device:C C10
+U 1 1 61206A53
+P 1250 2500
+F 0 "C10" H 1365 2546 50  0000 L CNN
+F 1 "680p" H 1365 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1288 2350 50  0001 C CNN
+F 3 "~" H 1250 2500 50  0001 C CNN
+	1    1250 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61207B39
+P 2500 2750
+AR Path="/60B53241/61207B39" Ref="#PWR?"  Part="1" 
+AR Path="/60B53241/611DFB46/61207B39" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 2500 2500 50  0001 C CNN
+F 1 "GND" H 2505 2577 50  0000 C CNN
+F 2 "" H 2500 2750 50  0001 C CNN
+F 3 "" H 2500 2750 50  0001 C CNN
+	1    2500 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2650 2500 2750
+$Comp
+L 2021-06-25_14-01-13:TS53YL_20K_20% R?
+U 1 1 61207B40
+P 2500 1300
+AR Path="/61207B40" Ref="R?"  Part="1" 
+AR Path="/60B53241/61207B40" Ref="R?"  Part="1" 
+AR Path="/60B53241/611DFB46/61207B40" Ref="R24"  Part="1" 
+F 0 "R24" V 2847 1221 60  0000 R CNN
+F 1 "50k" V 2953 1221 60  0000 R CNN
+F 2 "footprints:TS53YL 20K 20&percent_" H 2925 865 60  0001 C CNN
+F 3 "" H 2500 1300 60  0000 C CNN
+	1    2500 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 1700 2850 1700
+Wire Wire Line
+	2850 1700 2850 1300
+Wire Wire Line
+	2850 1300 2500 1300
+Connection ~ 2500 1300
+$Comp
+L Jumper:Jumper_3_Open JP?
+U 1 1 61207B4A
+P 2250 1200
+AR Path="/60B53241/61207B4A" Ref="JP?"  Part="1" 
+AR Path="/60B53241/611DFB46/61207B4A" Ref="JP22"  Part="1" 
+F 0 "JP22" H 2300 1000 50  0000 L CNN
+F 1 "Jumper_3_Open" H 1550 1100 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2250 1200 50  0001 C CNN
+F 3 "~" H 2250 1200 50  0001 C CNN
+	1    2250 1200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 1200 2500 1300
+$Comp
+L power:GND #PWR?
+U 1 1 61207B51
+P 2000 2750
+AR Path="/60B53241/61207B51" Ref="#PWR?"  Part="1" 
+AR Path="/60B53241/611DFB46/61207B51" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 2000 2500 50  0001 C CNN
+F 1 "GND" H 2005 2577 50  0000 C CNN
+F 2 "" H 2000 2750 50  0001 C CNN
+F 3 "" H 2000 2750 50  0001 C CNN
+	1    2000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1200 2000 2750
+Wire Wire Line
+	2500 2100 2500 2350
+Wire Wire Line
+	2250 800  2250 1050
+$Comp
+L Device:C C16
+U 1 1 61207B5A
+P 2500 2500
+F 0 "C16" H 2615 2546 50  0000 L CNN
+F 1 "680p" H 2615 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2538 2350 50  0001 C CNN
+F 3 "~" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
