@@ -778,32 +778,18 @@ F 3 "" H 850 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2021-07-02_17-58-25:FE52N6J0506KB C?
+L Device:C C?
 U 1 1 60F887F1
-P 900 4400
+P 850 4900
 AR Path="/60F887F1" Ref="C?"  Part="1" 
 AR Path="/60B53241/60F887F1" Ref="C11"  Part="1" 
-F 0 "C11" V 1347 4528 60  0000 L CNN
-F 1 "50µ" V 1453 4528 60  0000 L CNN
-F 2 "footprints:FE52N6J0506KB" H 1400 4540 60  0001 C CNN
-F 3 "" H 900 4400 60  0000 C CNN
-	1    900  4400
-	0    1    1    0   
+F 0 "C11" H 950 4800 60  0000 L CNN
+F 1 "220µ" H 950 5000 60  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 1350 5040 60  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/427/tmcu-1763538.pdf" H 850 4900 60  0001 C CNN
+	1    850  4900
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	850  4250 850  4400
-Wire Wire Line
-	850  4400 800  4400
-Wire Wire Line
-	900  4400 850  4400
-Connection ~ 850  4400
-Wire Wire Line
-	800  5400 850  5400
-Wire Wire Line
-	850  5500 850  5400
-Connection ~ 850  5400
-Wire Wire Line
-	850  5400 900  5400
 $Comp
 L Jumper:Jumper_3_Open JP10
 U 1 1 60FB2C10
@@ -821,8 +807,8 @@ $Comp
 L Device:R R4
 U 1 1 60FC49BC
 P 1350 4900
-F 0 "R4" V 1143 4900 50  0000 C CNN
-F 1 "25k" V 1234 4900 50  0000 C CNN
+F 0 "R4" H 1200 4800 50  0000 C CNN
+F 1 "25k" H 1200 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 4900 50  0001 C CNN
 F 3 "~" H 1350 4900 50  0001 C CNN
 	1    1350 4900
@@ -989,32 +975,18 @@ F 3 "" H 2150 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2021-07-02_17-58-25:FE52N6J0506KB C?
+L Device:C C?
 U 1 1 611C9576
-P 2200 4400
+P 2150 4900
 AR Path="/611C9576" Ref="C?"  Part="1" 
 AR Path="/60B53241/611C9576" Ref="C12"  Part="1" 
-F 0 "C12" V 2647 4528 60  0000 L CNN
-F 1 "50µ" V 2753 4528 60  0000 L CNN
-F 2 "footprints:FE52N6J0506KB" H 2700 4540 60  0001 C CNN
-F 3 "" H 2200 4400 60  0000 C CNN
-	1    2200 4400
-	0    1    1    0   
+F 0 "C12" H 2250 4800 60  0000 L CNN
+F 1 "220µ" H 2250 5050 60  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-12_Kemet-T" H 2650 5040 60  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/427/tmcu-1763538.pdf" H 2000 6000 60  0001 C CNN
+	1    2150 4900
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2150 4250 2150 4400
-Wire Wire Line
-	2150 4400 2100 4400
-Wire Wire Line
-	2200 4400 2150 4400
-Connection ~ 2150 4400
-Wire Wire Line
-	2100 5400 2150 5400
-Wire Wire Line
-	2150 5500 2150 5400
-Connection ~ 2150 5400
-Wire Wire Line
-	2150 5400 2200 5400
 $Comp
 L Jumper:Jumper_3_Open JP12
 U 1 1 611C9584
@@ -1032,8 +1004,8 @@ $Comp
 L Device:R R7
 U 1 1 611C958B
 P 2650 4900
-F 0 "R7" V 2443 4900 50  0000 C CNN
-F 1 "25k" V 2534 4900 50  0000 C CNN
+F 0 "R7" H 2500 4800 50  0000 C CNN
+F 1 "25k" H 2500 5000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2580 4900 50  0001 C CNN
 F 3 "~" H 2650 4900 50  0001 C CNN
 	1    2650 4900
@@ -1401,7 +1373,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 750  3150 750 
 Text Label 4250 3350 2    50   ~ 0
-Vin
+PVIN
 Wire Wire Line
 	4550 3350 4250 3350
 $Comp
@@ -1440,7 +1412,7 @@ P 3150 1000
 F 0 "C3" H 3268 1046 50  0000 L CNN
 F 1 "680µ" H 3268 955 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-7361-438_AVX-U" H 3188 850 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/40/catalogue_TRM-1021477.pdf" H 3150 1000 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/427/tmcu-1763538.pdf" H 3150 1000 50  0001 C CNN
 	1    3150 1000
 	1    0    0    -1  
 $EndComp
@@ -1556,4 +1528,20 @@ Wire Wire Line
 	9050 5900 9300 5900
 Wire Wire Line
 	9050 6050 9300 6050
+Wire Wire Line
+	2150 4250 2150 4750
+Wire Wire Line
+	2150 5050 2150 5500
+Wire Wire Line
+	850  4250 850  4750
+Wire Wire Line
+	850  5050 850  5500
+Text Label 4250 3050 2    50   ~ 0
+ITH
+Text Label 4250 3850 2    50   ~ 0
+VC
+Wire Wire Line
+	4550 3050 4250 3050
+Wire Wire Line
+	4550 3850 4250 3850
 $EndSCHEMATC

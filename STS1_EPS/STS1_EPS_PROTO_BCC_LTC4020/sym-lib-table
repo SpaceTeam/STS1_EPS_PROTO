@@ -11,4 +11,5 @@
   (lib (name DO1608C-103C)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/DO1608C-103C.lib)(options "")(descr ""))
   (lib (name STS-con)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/STS-con.lib)(options "")(descr ""))
   (lib (name SRP7050AA-R68M)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/SRP7050AA-R68M.lib)(options "")(descr ""))
+  (lib (name 1888807)(type Legacy)(uri ${KIPRJMOD}/../../STS1_LIB/1888807.lib)(options "")(descr ""))
 )

@@ -21,13 +21,13 @@ Via this pin, the charging profile can be defined. LiFePo require constant curre
 ## TIMER
 The timer pin specifies the time duration of a charge cycle. If this pin is wired to GND, no timing functions are activated. In the design, a jumper enables selection between no timer and an 3 hour timer (which results in an 200nF cap). 
 ## RNGSS
-Configures the duration of the battery charging current soft start. This pin sources 50uA. The voltage at this pin limits the configured charging current. Full charging current is achieved, if the pin is at 1V. A capacitor of 50uF results in a soft start time of 1s. Optionally, a jumper can be set, so the pin is connected to a resistor. In this case, the soft start feature is disabled.
+Configures the duration of the battery charging current soft start. This pin sources 50uA. The voltage at this pin limits the configured charging current. Full charging current is achieved, if the pin is at 1V. A capacitor with a capacitance of 220uF results in a soft start time of 4,4s. Optionally, a jumper can be set, so the pin is connected to a resistor. In this case, the soft start feature is disabled.
 ## VFBMIN
 Programms the minimum output voltage. If the battery voltage is below this value, the battery the battery FET is driven in such a way, that the this minimum voltage is ensured. A resistor divider of 17,8k and 100k results in a minimum output voltage of 2,5V.
 ## CSP / CSN
 The resistor between CSP and CSN defines the maximum battery charge current. A resistor of 10mOhm results in a maximum charging current of 5A.
 ## ILIMIT
-Constrains the maximum average inductor current. A capacitor at this pin leads to a soft start function. A jumper is placed here, in order to be able to select between a 1 second soft start, or no soft start. 
+Constrains the maximum average inductor current. A capacitor with a capacitance of 220µF at this pin leads to a soft start of 4,4s length. A jumper is placed here, in order to be able to enable or disable this function.
 ## VFBMAX
 The voltage that is set, after the battery finished or failed charging. A voltage divider of 31kOhm and 100kOhm resistor leads to an voltage of 3,6V.
 
@@ -37,7 +37,6 @@ The voltage that is set, after the battery finished or failed charging. A voltag
 * Entladeschlussspannung of LiFePo unclear. VFBMIN has to be reviewed.
 * Maximum Charge current unclear. Review CSN and CSP
 * Does VFBMIN and VFBMAX have to have different values? 
-* ITH and VC missing. Should these be made external? 
 
 
 

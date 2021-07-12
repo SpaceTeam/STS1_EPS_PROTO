@@ -556,4 +556,15 @@ Wire Wire Line
 Connection ~ 8200 5250
 Wire Wire Line
 	8200 5250 8200 5350
+$Comp
+L STS-con:coordinate_system U5
+U 1 1 60EF7724
+P 5300 1150
+F 0 "U5" H 5578 1221 50  0000 L CNN
+F 1 "logo" H 5578 1130 50  0000 L CNN
+F 2 "footprints:SpaceTeam_Logo" H 5300 1150 50  0001 C CNN
+F 3 "" H 5300 1150 50  0001 C CNN
+	1    5300 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
