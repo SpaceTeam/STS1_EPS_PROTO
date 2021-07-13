@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -562,7 +562,7 @@ U 1 1 60EF7724
 P 5300 1150
 F 0 "U5" H 5578 1221 50  0000 L CNN
 F 1 "logo" H 5578 1130 50  0000 L CNN
-F 2 "footprints:SpaceTeam_Logo" H 5300 1150 50  0001 C CNN
+F 2 "footprints:STLogoTiny" H 5300 1150 50  0001 C CNN
 F 3 "" H 5300 1150 50  0001 C CNN
 	1    5300 1150
 	1    0    0    -1  

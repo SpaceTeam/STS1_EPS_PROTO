@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title "EPS Battery Charger"
 Date "2021-05-31"
 Rev "1.0.0"
@@ -27,33 +27,6 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4020fd.
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2021-05-31_14-10-46:SI7272DP-T1-GE3 U3
-U 1 1 60B59191
-P 8050 3850
-AR Path="/60B59191" Ref="U3"  Part="1" 
-AR Path="/60B53241/60B59191" Ref="U3"  Part="1" 
-F 0 "U3" H 9013 4053 60  0000 L CNN
-F 1 "SI7272DP-T1-GE3" H 9013 3947 60  0000 L CNN
-F 2 "footprints:SI7272DP-T1-GE3" H 8500 3690 60  0001 C CNN
-F 3 "https://www.vishay.com/docs/69026/si7272dp.pdf" H 8050 3850 60  0001 C CNN
-	1    8050 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8350 3050 8350 3250
-Wire Wire Line
-	8350 3450 8250 3450
-Wire Wire Line
-	8450 3450 8350 3450
-Connection ~ 8350 3450
-Wire Wire Line
-	8750 3450 8850 3450
-Wire Wire Line
-	8850 3050 8850 3250
-Connection ~ 8850 3450
-Wire Wire Line
-	8850 3450 8950 3450
-$Comp
 L 2021-05-15_09-58-27:LTC4020EUHF-PBF U1
 U 2 1 60B71CBB
 P 9600 4750
@@ -67,54 +40,6 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4020fd.
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 3950 8350 4350
-Connection ~ 8350 4350
-Wire Wire Line
-	8350 4400 8350 4350
-$Comp
-L Device:C C7
-U 1 1 60B7FB03
-P 8600 4650
-F 0 "C7" H 8550 4550 50  0000 R CNN
-F 1 "200n" H 8550 4750 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1812_4532Metric" H 8638 4500 50  0001 C CNN
-F 3 "~" H 8600 4650 50  0001 C CNN
-	1    8600 4650
-	-1   0    0    1   
-$EndComp
-$Comp
-L pspice:INDUCTOR L1
-U 1 1 60B8234D
-P 8600 3250
-F 0 "L1" H 8600 3350 50  0000 C CNN
-F 1 "680n" H 8600 3200 50  0000 C CNN
-F 2 "footprints:INDPM7366X500N" H 8600 3250 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/54/BOURNS_SRP7050AA-2064304.pdf" H 8600 3250 50  0001 C CNN
-	1    8600 3250
-	1    0    0    -1  
-$EndComp
-Connection ~ 8350 3250
-Wire Wire Line
-	8350 3250 8350 3450
-Connection ~ 8850 3250
-Wire Wire Line
-	8850 3250 8850 3450
-Wire Wire Line
-	8750 2550 8850 2550
-$Comp
-L 2021-06-29_19-28-22:CST0612-FC-R002E R11
-U 1 1 60B851DC
-P 8300 950
-AR Path="/60B851DC" Ref="R11"  Part="1" 
-AR Path="/60B53241/60B851DC" Ref="R11"  Part="1" 
-F 0 "R11" H 9050 800 50  0000 L CNN
-F 1 "5m" H 9050 1000 50  0000 L CNN
-F 2 "footprints:CST0612-FC-R002E" V 8230 950 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/54/cst0612-777607.pdf" H 8300 950 50  0001 C CNN
-	1    8300 950 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
 	6550 2850 6800 2850
 Text HLabel 1150 750  0    50   Input ~ 0
 Vin
@@ -126,19 +51,6 @@ Connection ~ 9600 5150
 Wire Wire Line
 	9600 5250 9250 5250
 Connection ~ 9600 5250
-$Comp
-L 2021-06-29_19-28-22:CST0612-FC-R002E R12
-U 1 1 60B97867
-P 8300 3850
-AR Path="/60B97867" Ref="R12"  Part="1" 
-AR Path="/60B53241/60B97867" Ref="R12"  Part="1" 
-F 0 "R12" H 9050 3700 50  0000 L CNN
-F 1 "5m" H 9050 3900 50  0000 L CNN
-F 2 "footprints:CST0612-FC-R002E" V 8230 3850 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/54/cst0612-777607.pdf" H 8300 3850 50  0001 C CNN
-	1    8300 3850
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R R10
 U 1 1 60B9BB6B
@@ -162,8 +74,6 @@ F 3 "" H 9250 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9250 5250
-Wire Wire Line
-	9250 5250 8850 5250
 $Comp
 L power:GND #PWR017
 U 1 1 60BB4B1C
@@ -210,33 +120,18 @@ F 3 "" H 1500 7500 50  0001 C CNN
 	1    1500 7500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 60BF4606
-P 10850 3100
-F 0 "J3" H 10800 3350 50  0000 L CNN
-F 1 "Terminal BAT" H 10550 3250 50  0000 L CNN
-F 2 "footprints:1725656" H 10850 3100 50  0001 C CNN
-F 3 "~" H 10850 3100 50  0001 C CNN
-	1    10850 3100
-	1    0    0    -1  
-$EndComp
 Text Label 6800 3650 0    50   ~ 0
 TG1
-Text Label 8050 2950 2    50   ~ 0
+Text Label 7850 2350 2    50   ~ 0
 TG1
 Text Label 6800 3750 0    50   ~ 0
 TG2
-Text Label 8550 2950 0    50   ~ 0
+Text Label 7850 2450 2    50   ~ 0
 TG2
 Text Label 6800 2350 0    50   ~ 0
 BG2
 Text Label 6800 2450 0    50   ~ 0
 BG1
-Text Label 8050 3850 2    50   ~ 0
-BG1
-Text Label 8550 3850 0    50   ~ 0
-BG2
 Text Label 6800 3050 0    50   ~ 0
 CHARGING
 Text Label 6800 3150 0    50   ~ 0
@@ -286,38 +181,26 @@ CSP
 $Comp
 L power:GND #PWR020
 U 1 1 60C72FCD
-P 10650 3200
-F 0 "#PWR020" H 10650 2950 50  0001 C CNN
-F 1 "GND" H 10655 3027 50  0000 C CNN
-F 2 "" H 10650 3200 50  0001 C CNN
-F 3 "" H 10650 3200 50  0001 C CNN
-	1    10650 3200
+P 10750 3200
+F 0 "#PWR020" H 10750 2950 50  0001 C CNN
+F 1 "GND" H 10755 3027 50  0000 C CNN
+F 2 "" H 10750 3200 50  0001 C CNN
+F 3 "" H 10750 3200 50  0001 C CNN
+	1    10750 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10650 3100 10500 3100
 Text Label 10250 3100 0    50   ~ 0
 BAT
-Wire Wire Line
-	10500 2900 10500 3100
-Connection ~ 10500 3100
-Wire Wire Line
-	10500 3100 10250 3100
 Text Label 6800 2250 0    50   ~ 0
 BGATE
-Text Label 10000 2500 0    50   ~ 0
+Text Label 10150 2500 0    50   ~ 0
 BGATE
 Wire Wire Line
-	10200 2500 10000 2500
-Wire Wire Line
-	8850 2550 8850 750 
-Connection ~ 8850 2550
-Wire Wire Line
-	8850 2550 8950 2550
+	10350 2500 10150 2500
 Text HLabel 10800 750  2    50   Output ~ 0
 Vout
 Wire Wire Line
-	10500 2300 10500 2150
+	10650 2300 10650 2150
 Wire Wire Line
 	4550 2650 4250 2650
 Text Label 4250 2650 2    50   ~ 0
@@ -434,14 +317,6 @@ Wire Wire Line
 	1600 3250 1850 3250
 Text Label 1850 3250 0    50   ~ 0
 INTVCC
-Wire Wire Line
-	8850 3250 9150 3250
-Wire Wire Line
-	8350 3250 8050 3250
-Text Label 9150 3250 0    50   ~ 0
-SW2
-Text Label 8050 3250 2    50   ~ 0
-SW1
 Text Label 4250 2050 2    50   ~ 0
 INTVCC
 Text Label 6800 3350 0    50   ~ 0
@@ -452,19 +327,6 @@ Text Label 6800 2750 0    50   ~ 0
 SENSTOP
 Text Label 6800 2650 0    50   ~ 0
 SENSBOT
-$Comp
-L 2021-05-31_14-10-46:SI7272DP-T1-GE3 U2
-U 1 1 60B56DEC
-P 8050 2950
-AR Path="/60B56DEC" Ref="U2"  Part="1" 
-AR Path="/60B53241/60B56DEC" Ref="U2"  Part="1" 
-F 0 "U2" H 9013 3153 60  0000 L CNN
-F 1 "SI7272DP-T1-GE3" H 9013 3047 60  0000 L CNN
-F 2 "footprints:SI7272DP-T1-GE3" H 8500 2790 60  0001 C CNN
-F 3 "https://www.vishay.com/docs/69026/si7272dp.pdf" H 8050 2950 60  0001 C CNN
-	1    8050 2950
-	1    0    0    -1  
-$EndComp
 Text Label 4250 3250 2    50   ~ 0
 NTC
 Wire Wire Line
@@ -521,45 +383,10 @@ SHDN
 Wire Wire Line
 	4250 3650 4550 3650
 Wire Wire Line
-	8250 2550 8350 2550
-Wire Wire Line
-	8350 2550 8350 2000
-Connection ~ 8350 2550
-Wire Wire Line
-	8350 2550 8450 2550
-Text Label 8150 2150 2    50   ~ 0
-SENSTOP
-Wire Wire Line
-	8150 1500 8150 1400
-Wire Wire Line
-	8350 1500 8350 750 
-Wire Wire Line
-	8850 3950 8850 5250
-Wire Wire Line
-	8600 4350 8600 4500
-Wire Wire Line
-	8600 4350 8350 4350
-Wire Wire Line
-	8600 4800 8600 5250
-Wire Wire Line
-	8600 5250 8350 5250
-Connection ~ 8850 5250
-Wire Wire Line
 	9600 4850 9250 4850
 Wire Wire Line
 	9250 4850 9250 5250
 Connection ~ 9600 4850
-Wire Wire Line
-	8350 4900 8350 5250
-Connection ~ 8350 5250
-Wire Wire Line
-	8150 4900 8150 5250
-Wire Wire Line
-	8150 5250 8350 5250
-Text Label 8150 4250 2    50   ~ 0
-SENSBOT
-Wire Wire Line
-	8150 2000 8150 2150
 Text Label 4250 3550 2    50   ~ 0
 RT
 Wire Wire Line
@@ -951,14 +778,14 @@ Wire Wire Line
 $Comp
 L 2021-06-29_19-28-22:CST0612-FC-R002E R?
 U 1 1 6115AF39
-P 10450 2700
+P 10600 2700
 AR Path="/6115AF39" Ref="R?"  Part="1" 
 AR Path="/60B53241/6115AF39" Ref="R19"  Part="1" 
-F 0 "R19" H 11200 2550 50  0000 L CNN
-F 1 "10m" H 11200 2750 50  0000 L CNN
-F 2 "footprints:CST0612-FC-R002E" V 10380 2700 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/54/cst0612-777607.pdf" H 10450 2700 50  0001 C CNN
-	1    10450 2700
+F 0 "R19" H 11350 2550 50  0000 L CNN
+F 1 "10m" H 11350 2750 50  0000 L CNN
+F 2 "footprints:CST0612-FC-R002E" V 10530 2700 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/54/cst0612-777607.pdf" H 10600 2700 50  0001 C CNN
+	1    10600 2700
 	0    1    -1   0   
 $EndComp
 Text Label 2400 4000 0    50   ~ 0
@@ -1143,154 +970,103 @@ Wire Wire Line
 	6550 2750 6800 2750
 Text Label 6800 2850 0    50   ~ 0
 SENSVIN
-Text Label 8150 1400 2    50   ~ 0
-SENSVIN
-$Comp
-L Device:Jumper_NC_Small JP18
-U 1 1 60E5E3F4
-P 7950 1750
-F 0 "JP18" V 8050 1950 50  0000 R CNN
-F 1 "Top Side Current Shunt" V 7950 2700 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7950 1750 50  0001 C CNN
-F 3 "~" H 7950 1750 50  0001 C CNN
-	1    7950 1750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	7950 1650 7950 1500
+	9500 2250 9250 2250
+Connection ~ 9500 2250
 Wire Wire Line
-	7950 1500 8150 1500
-Connection ~ 8150 1500
+	9500 2050 9500 2250
 Wire Wire Line
-	7950 1850 7950 2000
+	9500 1500 9250 1500
+Connection ~ 9500 1500
 Wire Wire Line
-	7950 2000 8150 2000
-Connection ~ 8150 2000
-$Comp
-L Device:Jumper_NC_Small JP19
-U 1 1 60EABF0E
-P 7950 4650
-F 0 "JP19" V 8050 4850 50  0000 R CNN
-F 1 "Low Side Current Shunt" V 7950 5650 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7950 4650 50  0001 C CNN
-F 3 "~" H 7950 4650 50  0001 C CNN
-	1    7950 4650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8150 4250 8150 4350
-Wire Wire Line
-	7950 4550 7950 4350
-Wire Wire Line
-	7950 4350 8150 4350
-Connection ~ 8150 4350
-Wire Wire Line
-	8150 4350 8150 4400
-Wire Wire Line
-	7950 4750 7950 5250
-Wire Wire Line
-	7950 5250 8150 5250
-Connection ~ 8150 5250
-Connection ~ 8600 5250
-Wire Wire Line
-	8600 5250 8850 5250
-Wire Wire Line
-	9350 2250 9100 2250
-Connection ~ 9350 2250
-Wire Wire Line
-	9350 2050 9350 2250
-Wire Wire Line
-	9350 1500 9100 1500
-Connection ~ 9350 1500
-Wire Wire Line
-	9350 1750 9350 1500
+	9500 1750 9500 1500
 $Comp
 L Device:C C8
 U 1 1 60CCFBF9
-P 9350 1900
-F 0 "C8" H 9100 2000 50  0000 L CNN
-F 1 "330n" H 9050 1900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9388 1750 50  0001 C CNN
-F 3 "~" H 9350 1900 50  0001 C CNN
-	1    9350 1900
+P 9500 1900
+F 0 "C8" H 9250 2000 50  0000 L CNN
+F 1 "330n" H 9200 1900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9538 1750 50  0001 C CNN
+F 3 "~" H 9500 1900 50  0001 C CNN
+	1    9500 1900
 	1    0    0    -1  
 $EndComp
-Text Label 9100 2250 0    50   ~ 0
+Text Label 9250 2250 0    50   ~ 0
 CSN
-Text Label 9100 1500 0    50   ~ 0
+Text Label 9250 1500 0    50   ~ 0
 CSP
 Wire Wire Line
-	9550 2250 9350 2250
+	9700 2250 9500 2250
 Wire Wire Line
-	9550 1500 9350 1500
+	9700 1500 9500 1500
 $Comp
 L Device:R R15
 U 1 1 60CBFB0D
-P 9700 2250
-F 0 "R15" V 9600 2250 50  0000 C CNN
-F 1 "100" V 9800 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9630 2250 50  0001 C CNN
-F 3 "~" H 9700 2250 50  0001 C CNN
-	1    9700 2250
+P 9850 2250
+F 0 "R15" V 9750 2250 50  0000 C CNN
+F 1 "100" V 9950 2250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9780 2250 50  0001 C CNN
+F 3 "~" H 9850 2250 50  0001 C CNN
+	1    9850 2250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R14
 U 1 1 60CBF561
-P 9700 1500
-F 0 "R14" V 9600 1500 50  0000 C CNN
-F 1 "100" V 9800 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9630 1500 50  0001 C CNN
-F 3 "~" H 9700 1500 50  0001 C CNN
-	1    9700 1500
+P 9850 1500
+F 0 "R14" V 9750 1500 50  0000 C CNN
+F 1 "100" V 9950 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9780 1500 50  0001 C CNN
+F 3 "~" H 9850 1500 50  0001 C CNN
+	1    9850 1500
 	0    1    1    0   
 $EndComp
 $Comp
 L SI7135DP-T1-GE3:SI7135DP-T1-GE3 Q1
 U 1 1 60C7EC01
-P 10400 2600
+P 10550 2600
 AR Path="/60C7EC01" Ref="Q1"  Part="1" 
 AR Path="/60B53241/60C7EC01" Ref="Q1"  Part="1" 
-F 0 "Q1" H 10250 2600 50  0000 L CNN
-F 1 "SI7135DP-T1-GE3" H 9650 2500 50  0000 L CNN
-F 2 "footprints:TRANS_SI7135DP-T1-GE3" H 10400 2600 50  0001 L BNN
-F 3 "" H 10400 2600 50  0001 L BNN
-F 4 "A" H 10400 2600 50  0001 L BNN "PARTREV"
-F 5 "Vishay Siliconix" H 10400 2600 50  0001 L BNN "MANUFACTURER"
-F 6 "1.12mm" H 10400 2600 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 7 "Manufacturer Recommendations" H 10400 2600 50  0001 L BNN "STANDARD"
-	1    10400 2600
+F 0 "Q1" H 10400 2600 50  0000 L CNN
+F 1 "SI7135DP-T1-GE3" H 9800 2500 50  0000 L CNN
+F 2 "footprints:TRANS_SI7135DP-T1-GE3" H 10550 2600 50  0001 L BNN
+F 3 "" H 10550 2600 50  0001 L BNN
+F 4 "A" H 10550 2600 50  0001 L BNN "PARTREV"
+F 5 "Vishay Siliconix" H 10550 2600 50  0001 L BNN "MANUFACTURER"
+F 6 "1.12mm" H 10550 2600 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "Manufacturer Recommendations" H 10550 2600 50  0001 L BNN "STANDARD"
+	1    10550 2600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Jumper_NC_Small JP20
 U 1 1 60F4B388
-P 10150 1850
-F 0 "JP20" V 10200 2050 50  0000 R CNN
-F 1 "Battery Current" V 10100 2500 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10150 1850 50  0001 C CNN
-F 3 "~" H 10150 1850 50  0001 C CNN
-	1    10150 1850
+P 10300 1850
+F 0 "JP20" V 10350 2050 50  0000 R CNN
+F 1 "Battery Current" V 10250 2500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10300 1850 50  0001 C CNN
+F 3 "~" H 10300 1850 50  0001 C CNN
+	1    10300 1850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10300 1500 10300 1650
+	10450 1500 10450 1650
 Wire Wire Line
-	10300 2250 10300 2150
+	10450 2250 10450 2150
 Wire Wire Line
-	10150 1750 10150 1500
-Connection ~ 10150 1500
+	10300 1750 10300 1500
+Connection ~ 10300 1500
 Wire Wire Line
-	10150 1500 10300 1500
+	10300 1500 10450 1500
 Wire Wire Line
-	10150 1950 10150 2250
-Connection ~ 10150 2250
+	10300 1950 10300 2250
+Connection ~ 10300 2250
 Wire Wire Line
-	10150 2250 10300 2250
+	10300 2250 10450 2250
 Wire Wire Line
-	9850 1500 10150 1500
+	10000 1500 10300 1500
 Wire Wire Line
-	9850 2250 10150 2250
+	10000 2250 10300 2250
 $Comp
 L Connector:Conn_01x01_Male J7
 U 1 1 6101A7BC
@@ -1404,7 +1180,7 @@ Wire Wire Line
 	3650 850  3650 750 
 Connection ~ 3650 750 
 Wire Wire Line
-	3650 750  8350 750 
+	3650 750  7900 750 
 $Comp
 L Device:CP C3
 U 1 1 610A83EF
@@ -1506,12 +1282,7 @@ Connection ~ 6550 6650
 Wire Wire Line
 	6550 6650 6250 6650
 Wire Wire Line
-	8850 750  10500 750 
-Wire Wire Line
-	10500 1650 10500 750 
-Connection ~ 10500 750 
-Wire Wire Line
-	10500 750  10800 750 
+	10650 1650 10650 750 
 $Sheet
 S 9300 5850 550  300 
 U 611DFB46
@@ -1544,4 +1315,90 @@ Wire Wire Line
 	4550 3050 4250 3050
 Wire Wire Line
 	4550 3850 4250 3850
+Connection ~ 10650 750 
+Wire Wire Line
+	10650 750  10800 750 
+Wire Wire Line
+	10250 3100 10650 3100
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 60BF4606
+P 10950 3100
+F 0 "J3" H 10900 3350 50  0000 L CNN
+F 1 "Terminal BAT" H 10700 3250 50  0000 L CNN
+F 2 "footprints:1725656" H 10950 3100 50  0001 C CNN
+F 3 "~" H 10950 3100 50  0001 C CNN
+	1    10950 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 2900 10650 3100
+Connection ~ 10650 3100
+Wire Wire Line
+	10650 3100 10750 3100
+Wire Wire Line
+	8750 750  10650 750 
+$Sheet
+S 7950 2200 750  1050
+U 61004914
+F0 "switch_bridge" 50
+F1 "switch_bridge.sch" 50
+F2 "Vin" I L 7950 2250 50 
+F3 "Vout" I R 8700 2250 50 
+F4 "TG1" I L 7950 2350 50 
+F5 "TG2" I L 7950 2450 50 
+F6 "BG1" I L 7950 2550 50 
+F7 "BG2" I L 7950 2650 50 
+F8 "SW1" I L 7950 2750 50 
+F9 "SW2" I L 7950 2850 50 
+F10 "PGND" I R 8700 3150 50 
+F11 "SENSVIN" I L 7950 2950 50 
+F12 "SENSTOP" I L 7950 3050 50 
+F13 "SENSBOT" I L 7950 3150 50 
+$EndSheet
+Wire Wire Line
+	7850 2350 7950 2350
+Wire Wire Line
+	7850 2450 7950 2450
+Wire Wire Line
+	7950 2250 7900 2250
+Wire Wire Line
+	7900 2250 7900 750 
+Wire Wire Line
+	8750 2250 8750 750 
+Wire Wire Line
+	8700 2250 8750 2250
+Text Label 7850 2550 2    50   ~ 0
+BG1
+Text Label 7850 2650 2    50   ~ 0
+BG2
+Text Label 7850 2750 2    50   ~ 0
+SW1
+Text Label 7850 2850 2    50   ~ 0
+SW2
+Wire Wire Line
+	7850 2550 7950 2550
+Wire Wire Line
+	7950 2650 7850 2650
+Wire Wire Line
+	7850 2750 7950 2750
+Wire Wire Line
+	7950 2850 7850 2850
+Wire Wire Line
+	8700 3150 9250 3150
+Wire Wire Line
+	9250 3150 9250 4850
+Connection ~ 9250 4850
+Text Label 7850 2950 2    50   ~ 0
+SENSVIN
+Text Label 7850 3050 2    50   ~ 0
+SENSTOP
+Text Label 7850 3150 2    50   ~ 0
+SENSBOT
+Wire Wire Line
+	7950 2950 7850 2950
+Wire Wire Line
+	7850 3050 7950 3050
+Wire Wire Line
+	7950 3150 7850 3150
 $EndSCHEMATC
