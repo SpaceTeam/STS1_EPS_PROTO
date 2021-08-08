@@ -29,7 +29,7 @@ AR Path="/60DA0C13" Ref="CR1"  Part="1"
 F 0 "CR1" H 5650 2287 60  0000 C CNN
 F 1 "L6920D" H 5650 2181 60  0000 C CNN
 F 2 "footprints:L6920D" H 5650 2140 60  0001 C CNN
-F 3 "" H 4850 1900 60  0000 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/l6920.pdf" H 4850 1900 60  0001 C CNN
 	1    4850 1900
 	1    0    0    -1  
 $EndComp
@@ -146,7 +146,7 @@ $EndComp
 $Comp
 L Device:L L?
 U 1 1 60DA1D0F
-P 3650 2200
+P 3600 2200
 AR Path="/60DA6FCF/60DA1D0F" Ref="L?"  Part="1" 
 AR Path="/60DA7492/60DA1D0F" Ref="L?"  Part="1" 
 AR Path="/60DA7C29/60DA1D0F" Ref="L?"  Part="1" 
@@ -156,17 +156,17 @@ AR Path="/60DA8267/60DA1D0F" Ref="L?"  Part="1"
 AR Path="/60DA83BA/60DA1D0F" Ref="L?"  Part="1" 
 AR Path="/60DA84E4/60DA1D0F" Ref="L?"  Part="1" 
 AR Path="/60DA1D0F" Ref="L1"  Part="1" 
-F 0 "L1" V 3840 2200 50  0000 C CNN
-F 1 "10µ" V 3749 2200 50  0000 C CNN
-F 2 "footprints:DO1608C-103C" H 3650 2200 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/597/do1608c-270726.pdf" H 3650 2200 50  0001 C CNN
-	1    3650 2200
+F 0 "L1" V 3790 2200 50  0000 C CNN
+F 1 "10µ" V 3699 2200 50  0000 C CNN
+F 2 "footprints:DO1608C-103C" H 3600 2200 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/597/do1608c-270726.pdf" H 3600 2200 50  0001 C CNN
+	1    3600 2200
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4850 2200 4400 2200
 Wire Wire Line
-	3500 2200 3300 2200
+	3450 2200 3300 2200
 Wire Wire Line
 	3150 2200 3150 2550
 $Comp
@@ -724,33 +724,33 @@ SHDN controlled by\nsolar cell voltage
 Text Notes 6000 4350 0    50   ~ 0
 SHDN controlled by\nLBI
 $Comp
-L Connector:Conn_01x01_Male J3
+L Connector:TestPoint J3
 U 1 1 60E2457A
-P 3300 2000
-F 0 "J3" V 3350 1900 50  0000 L CNN
-F 1 "Inductor High" V 3250 1700 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3300 2000 50  0001 C CNN
-F 3 "~" H 3300 2000 50  0001 C CNN
-	1    3300 2000
-	0    1    1    0   
+P 3300 2200
+F 0 "J3" H 3150 2350 50  0000 L CNN
+F 1 "Inductor High" V 3300 2400 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3300 2200 50  0001 C CNN
+F 3 "~" H 3300 2200 50  0001 C CNN
+	1    3300 2200
+	1    0    0    -1  
 $EndComp
 Connection ~ 3300 2200
 Wire Wire Line
 	3300 2200 3150 2200
 $Comp
-L Connector:Conn_01x01_Male J4
+L Connector:TestPoint J4
 U 1 1 60E2512B
-P 3900 2000
-F 0 "J4" V 3950 1900 50  0000 L CNN
-F 1 "Inductor Low" V 3850 1850 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3900 2000 50  0001 C CNN
-F 3 "~" H 3900 2000 50  0001 C CNN
-	1    3900 2000
-	0    1    1    0   
+P 3900 2200
+F 0 "J4" H 3750 2350 50  0000 L CNN
+F 1 "Inductor Low" V 3900 2400 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3900 2200 50  0001 C CNN
+F 3 "~" H 3900 2200 50  0001 C CNN
+	1    3900 2200
+	1    0    0    -1  
 $EndComp
 Connection ~ 3900 2200
 Wire Wire Line
-	3900 2200 3800 2200
+	3900 2200 3750 2200
 $Comp
 L Device:Jumper_NC_Small JP8
 U 1 1 60E28369

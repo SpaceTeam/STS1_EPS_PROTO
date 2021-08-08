@@ -1068,69 +1068,69 @@ Wire Wire Line
 Wire Wire Line
 	10000 2250 10300 2250
 $Comp
-L Connector:Conn_01x01_Male J7
+L Connector:TestPoint J7
 U 1 1 6101A7BC
-P 7500 6350
-F 0 "J7" H 7608 6531 50  0000 C CNN
-F 1 "TG1" H 7608 6440 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7500 6350 50  0001 C CNN
-F 3 "~" H 7500 6350 50  0001 C CNN
-	1    7500 6350
-	0    -1   -1   0   
+P 7350 6050
+F 0 "J7" H 7250 6150 50  0000 C CNN
+F 1 "TG1" V 7350 6300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7350 6050 50  0001 C CNN
+F 3 "~" H 7350 6050 50  0001 C CNN
+	1    7350 6050
+	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J8
+L Connector:TestPoint J8
 U 1 1 610207BE
-P 7750 6350
-F 0 "J8" H 7858 6531 50  0000 C CNN
-F 1 "TG2" H 7858 6440 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7750 6350 50  0001 C CNN
-F 3 "~" H 7750 6350 50  0001 C CNN
-	1    7750 6350
-	0    -1   -1   0   
+P 7550 6050
+F 0 "J8" H 7450 6150 50  0000 C CNN
+F 1 "TG2" V 7550 6300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7550 6050 50  0001 C CNN
+F 3 "~" H 7550 6050 50  0001 C CNN
+	1    7550 6050
+	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J9
+L Connector:TestPoint J9
 U 1 1 61020D7E
-P 8000 6350
-F 0 "J9" H 8108 6531 50  0000 C CNN
-F 1 "BG1" H 8108 6440 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8000 6350 50  0001 C CNN
-F 3 "~" H 8000 6350 50  0001 C CNN
-	1    8000 6350
-	0    -1   -1   0   
+P 7750 6050
+F 0 "J9" H 7650 6150 50  0000 C CNN
+F 1 "BG1" V 7750 6300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7750 6050 50  0001 C CNN
+F 3 "~" H 7750 6050 50  0001 C CNN
+	1    7750 6050
+	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J10
+L Connector:TestPoint J10
 U 1 1 61020F9D
-P 8250 6350
-F 0 "J10" H 8358 6531 50  0000 C CNN
-F 1 "BG2" H 8358 6440 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8250 6350 50  0001 C CNN
-F 3 "~" H 8250 6350 50  0001 C CNN
-	1    8250 6350
-	0    -1   -1   0   
+P 7950 6050
+F 0 "J10" H 7850 6150 50  0000 C CNN
+F 1 "BG2" V 7950 6300 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7950 6050 50  0001 C CNN
+F 3 "~" H 7950 6050 50  0001 C CNN
+	1    7950 6050
+	-1   0    0    1   
 $EndComp
-Text Label 7500 6150 1    50   ~ 0
+Text Label 7350 6050 1    50   ~ 0
 TG1
-Text Label 7750 6150 1    50   ~ 0
+Text Label 7550 6050 1    50   ~ 0
 TG2
-Text Label 8000 6150 1    50   ~ 0
+Text Label 7750 6050 1    50   ~ 0
 BG1
-Text Label 8250 6150 1    50   ~ 0
+Text Label 7950 6050 1    50   ~ 0
 BG2
-Text Label 8500 6150 1    50   ~ 0
+Text Label 8150 6050 1    50   ~ 0
 BGATE
 $Comp
-L Connector:Conn_01x01_Male J11
+L Connector:TestPoint J11
 U 1 1 61023037
-P 8500 6350
-F 0 "J11" H 8608 6531 50  0000 C CNN
-F 1 "BGATE" H 8608 6440 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8500 6350 50  0001 C CNN
-F 3 "~" H 8500 6350 50  0001 C CNN
-	1    8500 6350
-	0    -1   -1   0   
+P 8150 6050
+F 0 "J11" H 8050 6150 50  0000 C CNN
+F 1 "BGATE" V 8150 6350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8150 6050 50  0001 C CNN
+F 3 "~" H 8150 6050 50  0001 C CNN
+	1    8150 6050
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector:Conn_01x01_Male J5
@@ -1262,25 +1262,20 @@ Wire Wire Line
 Connection ~ 6250 5800
 Wire Wire Line
 	6250 6600 6250 6650
-Wire Wire Line
-	6600 6650 6550 6650
 Connection ~ 6250 6650
 Wire Wire Line
 	6250 6650 6250 6850
 $Comp
-L Connector:Conn_01x01_Male J6
+L Connector:TestPoint J6
 U 1 1 610C8A04
-P 6550 6850
-F 0 "J6" V 6650 6800 50  0000 R CNN
-F 1 "SHDN" V 6550 6800 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6550 6850 50  0001 C CNN
-F 3 "~" H 6550 6850 50  0001 C CNN
-	1    6550 6850
-	0    -1   -1   0   
+P 7150 6050
+F 0 "J6" H 7100 6150 50  0000 R CNN
+F 1 "SHDN" V 7150 6450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 7150 6050 50  0001 C CNN
+F 3 "~" H 7150 6050 50  0001 C CNN
+	1    7150 6050
+	-1   0    0    1   
 $EndComp
-Connection ~ 6550 6650
-Wire Wire Line
-	6550 6650 6250 6650
 Wire Wire Line
 	10650 1650 10650 750 
 $Sheet
@@ -1401,4 +1396,8 @@ Wire Wire Line
 	7850 3050 7950 3050
 Wire Wire Line
 	7950 3150 7850 3150
+Wire Wire Line
+	6250 6650 6600 6650
+Text Label 7150 6050 1    50   ~ 0
+SHDN
 $EndSCHEMATC
