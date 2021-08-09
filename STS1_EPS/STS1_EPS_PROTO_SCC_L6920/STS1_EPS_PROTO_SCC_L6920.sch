@@ -49,7 +49,8 @@ AR Path="/60DA1D0E" Ref="C1"  Part="1"
 F 0 "C1" H 3268 2746 50  0000 L CNN
 F 1 "47µ" H 3268 2655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3188 2550 50  0001 C CNN
-F 3 "~" H 3150 2700 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/40/F38-2400651.pdf" H 3150 2700 50  0001 C CNN
+F 4 "F380K476MSA" H 3150 2700 50  0001 C CNN "Part. Nr."
 	1    3150 2700
 	1    0    0    -1  
 $EndComp
@@ -69,7 +70,8 @@ AR Path="/60DA1D02" Ref="C3"  Part="1"
 F 0 "C3" H 7068 2746 50  0000 L CNN
 F 1 "47µ" H 7068 2655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6988 2550 50  0001 C CNN
-F 3 "~" H 6950 2700 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/40/F38-2400651.pdf" H 6950 2700 50  0001 C CNN
+F 4 "F380K476MSA" H 6950 2700 50  0001 C CNN "Part. Nr."
 	1    6950 2700
 	1    0    0    -1  
 $EndComp
