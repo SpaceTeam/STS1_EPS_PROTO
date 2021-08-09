@@ -200,8 +200,6 @@ Wire Wire Line
 Text HLabel 10800 750  2    50   Output ~ 0
 Vout
 Wire Wire Line
-	10650 2300 10650 2150
-Wire Wire Line
 	4550 2650 4250 2650
 Text Label 4250 2650 2    50   ~ 0
 CSN
@@ -263,9 +261,9 @@ L Device:D_Schottky D2
 U 1 1 60D15D06
 P 1600 2900
 F 0 "D2" V 1646 2820 50  0000 R CNN
-F 1 "D_Schottky" V 1555 2820 50  0000 R CNN
-F 2 "footprints:RB168MM-40TFTR" H 1600 2900 50  0001 C CNN
-F 3 "~" H 1600 2900 50  0001 C CNN
+F 1 "SD1206T040S1R0" V 1555 2820 50  0000 R CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 1600 2900 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/40/schottky-776407.pdf" H 1600 2900 50  0001 C CNN
 	1    1600 2900
 	0    -1   -1   0   
 $EndComp
@@ -302,9 +300,9 @@ L Device:D_Schottky D3
 U 1 1 60D276DB
 P 1600 3400
 F 0 "D3" V 1646 3320 50  0000 R CNN
-F 1 "D_Schottky" V 1555 3320 50  0000 R CNN
-F 2 "footprints:RB168MM-40TFTR" H 1600 3400 50  0001 C CNN
-F 3 "~" H 1600 3400 50  0001 C CNN
+F 1 "SD1206T040S1R0" V 1555 3320 50  0000 R CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 1600 3400 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/40/schottky-776407.pdf" H 1600 3400 50  0001 C CNN
 	1    1600 3400
 	0    -1   -1   0   
 $EndComp
@@ -776,17 +774,18 @@ Wire Wire Line
 Wire Wire Line
 	3300 5550 3300 5350
 $Comp
-L 2021-06-29_19-28-22:CST0612-FC-R002E R?
+L Device:R R?
 U 1 1 6115AF39
-P 10600 2700
+P 10650 1850
 AR Path="/6115AF39" Ref="R?"  Part="1" 
 AR Path="/60B53241/6115AF39" Ref="R19"  Part="1" 
-F 0 "R19" H 11350 2550 50  0000 L CNN
-F 1 "10m" H 11350 2750 50  0000 L CNN
-F 2 "footprints:CST0612-FC-R002E" V 10530 2700 50  0001 C CNN
-F 3 "https://www.mouser.at/datasheet/2/54/cst0612-777607.pdf" H 10600 2700 50  0001 C CNN
-	1    10600 2700
-	0    1    -1   0   
+F 0 "R19" H 10750 1750 50  0000 L CNN
+F 1 "10m" H 10750 1850 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 10580 1850 50  0001 C CNN
+F 3 "https://www.mouser.at/datasheet/2/303/res_pcs-1665423.pdf" H 10650 1850 50  0001 C CNN
+F 4 "PCS1206DR0100ET" H 10650 1850 50  0001 C CNN "Part Nr."
+	1    10650 1850
+	1    0    0    1   
 $EndComp
 Text Label 2400 4000 0    50   ~ 0
 ILIMIT
@@ -1042,7 +1041,7 @@ $Comp
 L Device:Jumper_NC_Small JP20
 U 1 1 60F4B388
 P 10300 1850
-F 0 "JP20" V 10350 2050 50  0000 R CNN
+F 0 "JP20" V 10350 2100 50  0000 R CNN
 F 1 "Battery Current" V 10250 2500 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10300 1850 50  0001 C CNN
 F 3 "~" H 10300 1850 50  0001 C CNN
@@ -1050,19 +1049,11 @@ F 3 "~" H 10300 1850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10450 1500 10450 1650
-Wire Wire Line
-	10450 2250 10450 2150
-Wire Wire Line
 	10300 1750 10300 1500
 Connection ~ 10300 1500
 Wire Wire Line
-	10300 1500 10450 1500
-Wire Wire Line
 	10300 1950 10300 2250
 Connection ~ 10300 2250
-Wire Wire Line
-	10300 2250 10450 2250
 Wire Wire Line
 	10000 1500 10300 1500
 Wire Wire Line
@@ -1247,7 +1238,7 @@ P 6250 5800
 AR Path="/610C89F6" Ref="R?"  Part="1" 
 AR Path="/60B53241/610C89F6" Ref="R21"  Part="1" 
 F 0 "R21" V 6597 5721 60  0000 R CNN
-F 1 "600k" V 6703 5721 60  0000 R CNN
+F 1 "1M" V 6703 5721 60  0000 R CNN
 F 2 "footprints:TS53YL 20K 20&percent_" H 6675 5365 60  0001 C CNN
 F 3 "" H 6250 5800 60  0000 C CNN
 	1    6250 5800
@@ -1276,8 +1267,6 @@ F 3 "~" H 7150 6050 50  0001 C CNN
 	1    7150 6050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	10650 1650 10650 750 
 $Sheet
 S 9300 5850 550  300 
 U 611DFB46
@@ -1400,4 +1389,18 @@ Wire Wire Line
 	6250 6650 6600 6650
 Text Label 7150 6050 1    50   ~ 0
 SHDN
+Wire Wire Line
+	10650 750  10650 1500
+Wire Wire Line
+	10650 2000 10650 2250
+Wire Wire Line
+	10300 1500 10650 1500
+Connection ~ 10650 1500
+Wire Wire Line
+	10650 1500 10650 1700
+Wire Wire Line
+	10300 2250 10650 2250
+Connection ~ 10650 2250
+Wire Wire Line
+	10650 2250 10650 2300
 $EndSCHEMATC
